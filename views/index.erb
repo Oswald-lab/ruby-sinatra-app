@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Sinatra Todos</title></head>
+  <body>
+    <h1>Todos (<%= @todos.size %>)</h1>
+    <ul>
+      <% @todos.each do |t| %>
+        <li><%= Rack::Utils.escape_html(t[:title]) %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>

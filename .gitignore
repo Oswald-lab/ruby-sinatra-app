@@ -1,0 +1,12 @@
+.bundle/
+vendor/bundle/
+log/
+*.log
+.DS_Store
+node_modules/
+dist/
+.angular/
+coverage/
+.env
+.env.*
+!.env.example
